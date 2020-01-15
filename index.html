@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
@@ -66,33 +65,33 @@
 				<div class="inner">
 					<header>
 						<h2>Our Team</h2>
-						<p>Everyone that is on our team</p>
+						<p> </p>
 					</header>
 					<div class="flex flex-4">
 						<div class="box person">
 							<div class="image round">
-								<img src="images/pic03.jpg" alt="Person 1" />
+								<img src="images/default-profile.png" alt="Person 1" />
 							</div>
 							<h3>Jay</h3>
 							<p>CEO</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="images/pic04.jpg" alt="Person 2" />
+								<img src="images/default-profile.png" alt="Person 2" />
 							</div>
 							<h3>Tyler</h3>
 							<p>CTO</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
-								<img src="images/pic05.jpg" alt="Person 3" />
+								<img src="images/default-profile.png" alt="Person 3" />
 							</div>
 							<h3>Simon</h3>
 							<p>CFO</p>
                         </div>
                         <div class="box person">
 							<div class="image round">
-								<img src="images/pic05.jpg" alt="Person 3" />
+								<img src="images/default-profile.png" alt="Person 3" />
 							</div>
 							<h3>Chris</h3>
 							<p>COO</p>
@@ -111,6 +110,32 @@
 					</header>
                 </div>
 			</section>
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+                <script>
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    xfbml            : true,
+                    version          : 'v5.0'
+                  });
+                };
+
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+          attribution=install_email
+          page_id="107114867493898"
+          theme_color="#666666"
+            logged_in_greeting="Welcome to MaddStudios! How can we help?"
+            logged_out_greeting="Welcome to MaddStudios! How can we help?">
+        </div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -120,8 +145,8 @@
                             <a href="https://maddstudios.org">MaddStudios</a>
 						</div>
 						<ul class="icons">
-							<li><a href="#" class="icon fa-youtube"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-twitch"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="#" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
 							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
 						</ul>
 					</div>
